@@ -1,0 +1,12 @@
+finite_element_method:
+  fixed_portion: 0.5 # out of 1 (when 1 = 100%)
+  # percentage which respect to z-axis from lower bound upto the middle of the brain
+  # remark that fixed_portion cannot be 0 because this means there are no fixed nodes, leads to diverge nodal solution
+  # remark that fixed_portion cannot be 1 because this means every nodes are fixed nodes, leads to no deformation
+  solver: "sparse_direct"  # choices: "sparse_direct", "sparse_cg"
+  
+contact_mechanics:
+  contact_stiffness_factor: 3000 # unit # as known as penalty parameter (k) # default = 20
+  penetration_tolerance: 0.10 # mm
+  n_iterations_limit: 200  # iterations
+  n_iterations_patience: 10  # iterations

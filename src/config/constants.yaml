@@ -1,0 +1,37 @@
+common:
+  gravitational_acceleration: 9.81e+3   # mm/s^2
+  water_mass_density: 997.0e-6          # g/mm^3
+
+brain_mechanical_properties:
+  youngs_modulus: 3.0e+3                # g/(mm.s^2) or Pa
+  poissons_ratio: 0.45                  # unit
+  mass_density: 1046.0e-6               # g/mm^3
+
+skull_mechanical_properties:
+  youngs_modulus: 3.8                   # GPa
+  poissons_ratio: 0.1                   # unit
+
+lesion_mechanical_properties:
+  youngs_modulus: 30.0e+3                # g/(mm.s^2) or Pa
+  poissons_ratio: 0.45                  # unit
+  mass_density: 1046.0e-6               # g/mm^3
+
+silicone_mechanical_properties:
+  material: RungArt Silicone SOFTCASTFX RA-001AB
+  referenced_objects_volume: 16000      # mm^3      
+  referenced_objects_mass: 17.67        # g
+  mass_density: 1104.375e-6             # g/mm^3            # obtained by calculation from referenced object
+  youngs_modulus: 21717.95              # g/(mm.s^2) or Pa  # obtained by iteration in expt1a
+  poissons_ratio: 0.353034483           # unit              # obtained by iteration in expt1a
+
+plaplus_mechanical_properties:
+  material: PLA+ 3D Printing Filament
+  mass_density: 1.078e-3                # g/mm^3            # obtained by calculation from referenced object
+  youngs_modulus: 4.107e+9              # g/(mm.s^2) or Pa  # obtained by internet
+  poissons_ratio: 0.35                  # unit              # obtained by internet
+  
+random_stiff_mechanical_properties:
+  material: Random Stiff Material
+  mass_density: 1.078e-3                # g/mm^3            # obtained by calculation from referenced object
+  youngs_modulus: 120.0e+9              # g/(mm.s^2) or Pa  # obtained by randomization to achieve a stiff object
+  poissons_ratio: 0.20                  # unit              # obtained by randomization to achieve a stiff object

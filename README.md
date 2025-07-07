@@ -11,6 +11,8 @@ The developed python package is contained under `src/`.
 - `/utils`: Utilities for helping in validation experiments, postprocessing, etc.
 - `/config`: Parameters and constants in `.yaml`.
 
+The package's dependencies are listed in `requirements.txt` (achieved through `pip freeze`).
+
 
 ## Scripts
 
@@ -38,7 +40,13 @@ The uploaded data include:
 - `cuboidbrain3`: A geometric silicone brain phantom, scanned with CT scanner. This phantom is used for the validation experiments.
 - `mrbraintumor1`: An MR images of brain with tumor, obtained from example dataset of `3D Slicer`. This data are used for demonstration purpose.
 
-The current uploaded data are the main data used in the study, which compose of the 3D reconstructed of segmented images and its generated meshes in `Gmsh` format. In the study, there are more phantom data used in the validation. Due to the file size and number of data, it cannot uploaded into GitHub repository, please contact the author to request the rest of data.
+The current uploaded data are the main data used in the study, which compose of the 3D reconstructed of segmented images and its generated meshes in `Gmsh` format. In the study, there are more data used, including phantoms and its results. Due to the file size and number of data, it cannot uploaded into GitHub repository, please contact the author to request the rest of data.
+
+
+## Specification of Test Station
+- CPU: Intel Core i5-12400F
+- RAM: 32 GB
+- GPU: Nvidia GeForce RTX 2060
 
 
 ## Contact
